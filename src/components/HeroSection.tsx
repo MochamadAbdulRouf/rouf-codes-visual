@@ -1,4 +1,4 @@
-import { Linkedin, Github, Twitter, Instagram, Youtube, Mail, ArrowDown } from "lucide-react";
+import { Linkedin, Github, Twitter, Instagram, Youtube, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import avatarImage from "@/assets/avatar.jpg";
 
@@ -83,17 +83,6 @@ const HeroSection = () => {
               />
             </div>
           </div>
-        </div>
-
-        {/* Bottom CTA */}
-        <div className="text-center mt-20 animate-bounce-slow">
-          <a
-            href="#projects"
-            className="inline-flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
-          >
-            <span className="text-sm font-medium tracking-wide">CHECK OUT MY PROJECTS</span>
-            <ArrowDown className="h-5 w-5 group-hover:translate-y-1 transition-transform" />
-          </a>
         </div>
       </div>
     </div>
