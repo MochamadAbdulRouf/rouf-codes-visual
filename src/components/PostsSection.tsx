@@ -1,51 +1,105 @@
-import { Calendar, Clock, ArrowRight } from "lucide-react";
+// import { Calendar, Clock, ArrowRight } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { 
+  Calendar, 
+  Clock, 
+  ArrowRight, 
+  Github, 
+  FileText, 
+  BookOpen,
+  Database,
+  Newspaper 
+} from "lucide-react";
+import { platform } from "os";
+
+// BUAT "PETA" UNTUK IKON DAN TEKS
+const linkDetails = {
+  github: {
+    text: "View on GitHub",
+    Icon: Github
+  }, 
+  medium: {
+    text: "Read on Medium",
+    Icon: FileText
+  },
+  blogger: {
+    text: "Read on Blogger",
+    Icon: BookOpen
+  },
+  drive: {
+    text: "View Google Docs",
+    Icon: Newspaper
+  },
+  default: {
+    text: "Read More",
+    Icon: ArrowRight
+  }
+};
 
 const PostsSection = () => {
   const posts = [
     {
-      title: "Implementing Zero-Downtime Deployments with Kubernetes",
-      excerpt: "Learn how to achieve seamless application updates using rolling deployments, blue-green strategies, and canary releases in Kubernetes.",
-      date: "2024-03-15",
-      readTime: "8 min read",
-      tags: ["Kubernetes", "DevOps", "Deployment"],
+      title: "Deploy Aplikasi Laravel Perpusku dengan Docker & Docker Compose",
+      excerpt: "Melakukan deployment aplikasi Laravel Perpusku menggunakan Docker dan Docker Compose untuk kemudahan pengelolaan container.",
+      date: "2025-07-10",
+      readTime: "2 Jam",
+      tags: ["Docker", "DevOps", "Deployment"],
+      links: [
+        { platform: 'medium', url: 'https://medium.com/@rouf08412/deploy-laravel-perpusku-dengan-docker-tutorial-lengkap-medium-style-86681792f198' },
+        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/07/challenge-deploy-web-laravel-perpus.html' }
+      ]
     },
     {
-      title: "Infrastructure as Code: Terraform Best Practices",
-      excerpt: "Explore advanced Terraform patterns, state management strategies, and module design principles for scalable infrastructure.",
-      date: "2024-03-10",
-      readTime: "10 min read",
-      tags: ["Terraform", "IaC", "Cloud"],
+      title: "AWS DevOps Module",
+      excerpt: "Panduan lengkap untuk membangun modul AWS DevOps yang mencakup Jenkins, Terraform, Docker, dan Kubernetes.",
+      date: "2025-06-28",
+      readTime: "6 jam",
+      tags: ["AWS", "IaC", "Cloud", "DevOps"],
+      links: [
+        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/07/blog-post.html' }
+      ]
     },
     {
-      title: "Monitoring at Scale: Prometheus and Grafana",
-      excerpt: "A comprehensive guide to setting up enterprise-grade monitoring with Prometheus metrics collection and Grafana dashboards.",
-      date: "2024-03-05",
-      readTime: "12 min read",
-      tags: ["Monitoring", "Prometheus", "Grafana"],
+      title: "MTCNA Module: MikroTik Certified Network Associate",
+      excerpt: "Panduan lengkap untuk mempersiapkan sertifikasi MTCNA dengan fokus pada konfigurasi jaringan menggunakan perangkat MikroTik.",
+      date: "2025-04-21",
+      readTime: "6 Jam",
+      tags: ["Winbox", "Mikrotik", "Network"],
+      links: [
+        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/05/modul-mtcna-mochamad-abdul-rouf.html' }
+      ]
     },
     {
-      title: "CI/CD Pipeline Security: Best Practices",
-      excerpt: "Secure your CI/CD pipelines with secrets management, container scanning, and automated security testing workflows.",
-      date: "2024-02-28",
-      readTime: "7 min read",
-      tags: ["Security", "CI/CD", "DevSecOps"],
+      title: "Debian Linux Server - System Administration Module",
+      excerpt: "Modul administrasi sistem untuk Debian Linux Server yang mencakup instalasi, konfigurasi, dan manajemen layanan server.",
+      date: "2025-03-21",
+      readTime: "6 Jam",
+      tags: ["Server", "Linux", "SystemAdministration"],
+      links: [
+        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/03/modul-debian-11-systemadministrator.html' }
+      ]
     },
     {
-      title: "Docker Multi-Stage Builds for Optimal Images",
-      excerpt: "Optimize your container images using multi-stage builds, reduce image size, and improve build performance.",
-      date: "2024-02-20",
-      readTime: "6 min read",
-      tags: ["Docker", "Containers", "Optimization"],
+      title: "Continuous Delivery with Jenkins in Kubernetes Engine GCP (Google Cloud Platform)",
+      excerpt: "Set Up Aplikasi menggunakan Jenkins di Google Kubernetes Engine untuk mengotomatisasi proses Continuous Delivery.",
+      date: "2025-08-29",
+      readTime: "2 Jam",
+      tags: ["Kubernetes", "GCP", "Jenkins", "CI/CD", "DevOps", "Cloud"],
+      links: [
+        { platform: 'medium', url: 'https://medium.com/@rouf08412/continuous-delivery-with-jenkins-in-kubernetes-engine-7b3d37c40d72' }
+      ]
     },
     {
-      title: "AWS vs GCP: Cloud Services Comparison",
-      excerpt: "A detailed comparison of compute, storage, networking, and managed services across AWS and Google Cloud Platform.",
-      date: "2024-02-15",
-      readTime: "15 min read",
-      tags: ["AWS", "GCP", "Cloud Comparison"],
+      title: "Setup Jenkins With Kubernetes Engine GCP (Google Cloud Platform)",
+      excerpt: "Mengkonfigurasi Jenkins di Google Kubernetes Engine untuk membantu mengelola alur CI/CD Aplikasi.",
+      date: "2025-08-29",
+      readTime: "2 Jam",
+      tags: ["AWS", "GCP", "Jenkins", "Kubernetes", "DevOps", "Cloud"],
+      links: [
+        { platform: 'medium', url: 'https://medium.com/@rouf08412/setup-jenkins-with-kubernetes-engine-4f647cc24db6' }
+      ]
     },
   ];
 
@@ -104,14 +158,83 @@ const PostsSection = () => {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button variant="ghost" size="sm" className="w-full group">
-                  Read More
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
+                <div className="flex flex-wrap gap-2">
+                {/* Cek apakah 'post.links' ada dan punya isi */}
+                {post.links && post.links.map((link, linkIndex) => {
+                  // Ambil detail (teks & ikon) dari 'linkDetails'
+                  const details = linkDetails[link.platform] || linkDetails.default;
+                  const { Icon } = details; // Ambil komponen Ikon
+                    // Render satu tombol untuk setiap link
+                    return (
+                      <Button 
+                       
+                        key={linkIndex} 
+                        variant="ghost" 
+                        size="sm" 
+                        className="group" // Hapus 'w-full'
+                        asChild>
+
+                        <a 
+                        href={link.url} // <-- URL dinamis
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                        {details.text} {/* <-- Teks dinamis */}
+                        <Icon className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        </a>
+
+                      </Button>
+                    );
+                  })}
+                </div>
               </CardFooter>
             </Card>
           ))}
         </div>
+        <div className="text-center mt-16 border-t pt-12">
+        <h3 className="text-2xl font-semibold mb-6">
+          Find All My Writings
+        </h3>
+        <div className="flex justify-center gap-4 flex-wrap">
+
+          {/* Tombol 1: MEDIUM */}
+          <Button size="lg" asChild>
+            <a 
+              href="https://medium.com/@rouf08412" // <-- GANTI DENGAN LINK PROFIL ANDA
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <FileText className="mr-2 h-5 w-5" />
+              My Medium Profile
+            </a>
+          </Button>
+
+          {/* Tombol 2: BLOGGER */}
+          <Button size="lg" asChild>
+            <a 
+              href="https://mochabdulrouf.blogspot.com/" // <-- GANTI DENGAN LINK PROFIL ANDA
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <BookOpen className="mr-2 h-5 w-5" />
+              My Blogger Profile
+            </a>
+          </Button>
+
+          {/* Tombol 3: GITHUB (Contoh) */}
+          <Button size="lg" asChild>
+            <a 
+              href="https://github.com/MochamadAbdulRouf" // <-- GANTI DENGAN LINK PROFIL ANDA
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Github className="mr-2 h-5 w-5" />
+              My GitHub Profile
+            </a>
+          </Button>
+
+        </div>
+      </div>
       </div>
     </section>
   );
