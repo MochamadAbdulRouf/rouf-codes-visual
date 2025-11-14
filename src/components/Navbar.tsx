@@ -1,9 +1,11 @@
 import { Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isDark, setIsDark] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const isDarkMode = localStorage.getItem("theme") === "dark";
@@ -29,29 +31,51 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-lg font-semibold text-foreground">
+          <Link to="/" className="text-lg font-semibold text-foreground hover:text-primary transition-colors">
             Mochamad Abdul Rouf's Portfolio
-          </div>
+          </Link>
           
           <div className="hidden md:flex items-center gap-8">
-            <a href="#home" className="text-sm text-foreground hover:text-primary transition-colors">
+            <Link 
+              to="/" 
+              className={`text-sm transition-colors ${
+                location.pathname === "/" ? "text-primary font-medium" : "text-foreground hover:text-primary"
+              }`}
+            >
               Home
-            </a>
-            <a href="#posts" className="text-sm text-foreground hover:text-primary transition-colors">
-              Posts
-            </a>
-            <a href="#projects" className="text-sm text-foreground hover:text-primary transition-colors">
-              Projects
-            </a>
-            <a href="#talks" className="text-sm text-foreground hover:text-primary transition-colors">
-              Talks
-            </a>
-            <a href="#uses" className="text-sm text-foreground hover:text-primary transition-colors">
-              Uses
-            </a>
-            <a href="#about" className="text-sm text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link 
+              to="/about" 
+              className={`text-sm transition-colors ${
+                location.pathname === "/about" ? "text-primary font-medium" : "text-foreground hover:text-primary"
+              }`}
+            >
               About
-            </a>
+            </Link>
+            <Link 
+              to="/projects" 
+              className={`text-sm transition-colors ${
+                location.pathname === "/projects" ? "text-primary font-medium" : "text-foreground hover:text-primary"
+              }`}
+            >
+              Projects
+            </Link>
+            <Link 
+              to="/posts" 
+              className={`text-sm transition-colors ${
+                location.pathname === "/posts" ? "text-primary font-medium" : "text-foreground hover:text-primary"
+              }`}
+            >
+              Posts / Blog
+            </Link>
+            <Link 
+              to="/contact" 
+              className={`text-sm transition-colors ${
+                location.pathname === "/contact" ? "text-primary font-medium" : "text-foreground hover:text-primary"
+              }`}
+            >
+              Contact
+            </Link>
           </div>
 
           <Button
