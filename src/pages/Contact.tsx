@@ -1,33 +1,16 @@
 import Navbar from "@/components/Navbar";
-import { Mail, Linkedin, Github, Twitter, Instagram, Youtube } from "lucide-react";
+import { Mail, Linkedin, Github, Instagram, FileText, BookOpen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import Footer from "@/components/Footer";
 
 const Contact = () => {
   const contactMethods = [
-    {
-      icon: Mail,
-      title: "Email",
-      value: "your.email@example.com",
-      href: "mailto:your.email@example.com",
-    },
     {
       icon: Linkedin,
       title: "LinkedIn",
       value: "Connect with me",
       href: "https://linkedin.com",
-    },
-    {
-      icon: Github,
-      title: "GitHub",
-      value: "View my repositories",
-      href: "https://github.com",
-    },
-    {
-      icon: Twitter,
-      title: "X (Twitter)",
-      value: "Follow me",
-      href: "https://twitter.com",
     },
     {
       icon: Instagram,
@@ -36,10 +19,28 @@ const Contact = () => {
       href: "https://instagram.com",
     },
     {
-      icon: Youtube,
-      title: "YouTube",
-      value: "Subscribe to my channel",
-      href: "https://youtube.com",
+      icon: Github,
+      title: "GitHub",
+      value: "View my repositories",
+      href: "https://github.com",
+    },
+    {
+      icon: Mail,
+      title: "Email",
+      value: "your.email@example.com",
+      href: "mailto:your.email@example.com",
+    },
+    {
+      icon: FileText,
+      title: "Medium",
+      value: "Read my articles",
+      href: "https://medium.com",
+    },
+    {
+      icon: BookOpen,
+      title: "Blogger",
+      value: "Visit my blog",
+      href: "https://blogger.com",
     },
   ];
 
@@ -82,6 +83,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
