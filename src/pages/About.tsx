@@ -5,7 +5,7 @@ const About = () => {
     <div className="min-h-screen">
       <Navbar />
       <div className="container mx-auto px-6 py-24">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-8">
             About Me
           </h1>
