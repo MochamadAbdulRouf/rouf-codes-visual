@@ -15,8 +15,8 @@ const Footer = () => {
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Left - Logo/Name */}
-          <div className="text-2xl font-bold text-foreground">
-            ROUF.
+          <div className="text-lg font-semibold text-foreground">
+            Mochamad Abdul Rouf | @2025
           </div>
 
           {/* Right - Social Media Icons */}
