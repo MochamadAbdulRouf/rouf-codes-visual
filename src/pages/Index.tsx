@@ -8,8 +8,12 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar />
       <HeroSection />
-      <ProjectsPreview />
-      <PostsPreview />
+      {/* Gradient transition from grid to solid background */}
+      <div className="relative">
+        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-transparent to-background pointer-events-none"></div>
+        <ProjectsPreview />
+        <PostsPreview />
+      </div>
     </div>
   );
 };

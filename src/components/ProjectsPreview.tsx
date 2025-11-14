@@ -1,4 +1,4 @@
-import { Github, ExternalLink } from "lucide-react";
+import { Github, ExternalLink, ArrowDown } from "lucide-react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -23,10 +23,11 @@ const ProjectsPreview = () => {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-12 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Check Out My Projects
-          </h2>
+        <div className="text-center mb-12 animate-bounce-slow">
+          <div className="inline-flex flex-col items-center gap-2 text-muted-foreground group">
+            <span className="text-sm font-medium tracking-wide">CHECK OUT MY PROJECTS</span>
+            <ArrowDown className="h-5 w-5 group-hover:translate-y-1 transition-transform" />
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-8">
