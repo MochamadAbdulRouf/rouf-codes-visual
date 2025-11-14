@@ -23,7 +23,7 @@ const PostsPreview = () => {
     {
       title: "Hands On Kubernetes Labs",
       excerpt: "Sebuah Project yang saya rancang untuk dokumentasi saya saat mempelajari Kubernetes melalui serangkaian lab yang tersusun rapi.",
-      date: "2025-08-29",
+      date: "2025-09-01",
       readTime: "8 Jam",
       tags: ["Kubernetes", "DevOps", "Cloud"],
     },
