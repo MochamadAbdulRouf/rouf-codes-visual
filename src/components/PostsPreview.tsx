@@ -20,6 +20,20 @@ const PostsPreview = () => {
       readTime: "10 min read",
       tags: ["Terraform", "IaC", "Cloud"],
     },
+    {
+      title: "Infrastructure as Code: Terraform Best Practices",
+      excerpt: "Explore advanced Terraform patterns, state management strategies, and module design principles for scalable infrastructure.",
+      date: "2024-03-10",
+      readTime: "10 min read",
+      tags: ["Terraform", "IaC", "Cloud"],
+    },
+    {
+      title: "Infrastructure as Code: Terraform Best Practices",
+      excerpt: "Explore advanced Terraform patterns, state management strategies, and module design principles for scalable infrastructure.",
+      date: "2024-03-10",
+      readTime: "10 min read",
+      tags: ["Terraform", "IaC", "Cloud"],
+    },
   ];
 
   const formatDate = (dateString: string) => {
@@ -75,9 +89,10 @@ const PostsPreview = () => {
                 </div>
               </CardContent>
               <CardFooter>
-                <Button variant="ghost" size="sm" className="w-full group">
-                  Read More
+                <Button variant="ghost" size="sm" className="w-full group" asChild>
+                  <Link to="/posts">Read More
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
                 </Button>
               </CardFooter>
             </Card>
