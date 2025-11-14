@@ -59,7 +59,7 @@ const ProjectsSection = () => {
           {projects.map((project, index) => (
             <Card 
               key={index} 
-              className="hover:shadow-lg transition-shadow duration-300 animate-fade-in"
+              className="hover:shadow-lg hover:scale-105 transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardHeader>
