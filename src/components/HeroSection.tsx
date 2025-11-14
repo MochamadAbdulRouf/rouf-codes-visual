@@ -1,0 +1,103 @@
+import { Linkedin, Github, Twitter, Instagram, Youtube, Mail, ArrowDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import avatarImage from "@/assets/avatar.jpg";
+
+const HeroSection = () => {
+  const socialLinks = [
+    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com", label: "GitHub" },
+    { icon: Twitter, href: "https://twitter.com", label: "X (Twitter)" },
+    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+    { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
+    { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
+  ];
+
+  const expertise = [
+    "Linux Server Administration",
+    "Kubernetes & Cloud (GCP, AWS)",
+    "Docker & Docker Compose",
+    "CI/CD Pipelines (Jenkins, GitHub Actions)",
+    "Infrastructure as Code (Terraform, Ansible)",
+    "Monitoring (Prometheus, Grafana)",
+  ];
+
+  return (
+    <div className="min-h-screen grid-background pt-24">
+      <div className="container mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          {/* Left Column - Text Content */}
+          <div className="space-y-6 animate-fade-in">
+            <h1 className="text-5xl md:text-7xl font-bold text-foreground leading-tight">
+              Hello, I'm Rouf.
+            </h1>
+            
+            <div className="text-xl md:text-2xl">
+              <span className="bg-accent text-accent-foreground px-3 py-1 rounded font-semibold">
+                Fresh Graduate
+              </span>
+              <span className="text-foreground ml-2">
+                specializing in DevOps and Cloud.
+              </span>
+            </div>
+
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              I am passionate about cloud infrastructure, automation, and server administration.
+            </p>
+
+            <div className="space-y-3">
+              <h3 className="text-lg font-semibold text-foreground">Expertise in:</h3>
+              <ul className="space-y-2">
+                {expertise.map((skill, index) => (
+                  <li key={index} className="flex items-start text-muted-foreground">
+                    <span className="text-accent mr-2">▪</span>
+                    <span>{skill}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="flex items-center gap-4 pt-4">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <social.icon className="h-5 w-5" />
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Column - Image */}
+          <div className="flex justify-center animate-fade-in-delayed">
+            <div className="relative">
+              <div className="absolute inset-0 bg-accent/20 rounded-full blur-3xl"></div>
+              <img
+                src={avatarImage}
+                alt="Mochamad Abdul Rouf"
+                className="relative rounded-full w-64 h-64 md:w-80 md:h-80 object-cover border-4 border-border shadow-2xl"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-20 animate-bounce-slow">
+          <a
+            href="#projects"
+            className="inline-flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors group"
+          >
+            <span className="text-sm font-medium tracking-wide">CHECK OUT MY PROJECTS</span>
+            <ArrowDown className="h-5 w-5 group-hover:translate-y-1 transition-transform" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default HeroSection;

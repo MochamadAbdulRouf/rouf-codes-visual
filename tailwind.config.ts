@@ -57,6 +57,7 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        grid: "hsl(var(--grid-color))",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +81,23 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          from: {
+            opacity: "0",
+            transform: "translateY(20px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.8s ease-out",
+        "fade-in-delayed": "fade-in 0.8s ease-out 0.2s both",
+        "bounce-slow": "bounce 3s infinite",
       },
     },
   },
