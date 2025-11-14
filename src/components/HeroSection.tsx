@@ -1,15 +1,15 @@
-import { Linkedin, Github, Twitter, Instagram, Youtube, Mail } from "lucide-react";
+import { Linkedin, Github, Instagram, Mail, BookOpen, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import avatarImage from "@/assets/avatar.jpg";
 
 const HeroSection = () => {
   const socialLinks = [
     { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Twitter, href: "https://twitter.com", label: "X (Twitter)" },
     { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: Youtube, href: "https://youtube.com", label: "YouTube" },
+    { icon: Github, href: "https://github.com", label: "GitHub" },
     { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
+    { icon: FileText, href: "https://medium.com", label: "Medium" },
+    { icon: BookOpen, href: "https://blogger.com", label: "Blogger" },
   ];
 
   const expertise = [

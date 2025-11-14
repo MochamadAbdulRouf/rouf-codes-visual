@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import ProjectsSection from "@/components/ProjectsSection";
+import Footer from "@/components/Footer";
 
 const Projects = () => {
   return (
@@ -8,6 +9,7 @@ const Projects = () => {
       <div className="pt-16">
         <ProjectsSection />
       </div>
+      <Footer />
     </div>
   );
 };

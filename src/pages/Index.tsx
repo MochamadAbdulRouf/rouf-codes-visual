@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProjectsPreview from "@/components/ProjectsPreview";
 import PostsPreview from "@/components/PostsPreview";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
         <ProjectsPreview />
         <PostsPreview />
       </div>
+      <Footer />
     </div>
   );
 };
