@@ -101,6 +101,16 @@ const PostsSection = () => {
         { platform: 'medium', url: 'https://medium.com/@rouf08412/setup-jenkins-with-kubernetes-engine-4f647cc24db6' }
       ]
     },
+    {
+      title: "Hands On Kubernetes Labs",
+      excerpt: "Sebuah Project yang saya rancang untuk dokumentasi saya saat mempelajari Kubernetes melalui serangkaian lab yang tersusun rapi.",
+      date: "2025-08-29",
+      readTime: "8 Jam",
+      tags: ["Kubernetes", "DevOps", "Cloud"],
+      links: [
+        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Hands-on-Kubernetes-Labs' }
+      ]
+    },
   ];
 
   const formatDate = (dateString: string) => {
