@@ -29,7 +29,7 @@ const linkDetails = {
     Icon: BookOpen
   },
   drive: {
-    text: "View Google Docs",
+    text: "View Google Docs/Sheets",
     Icon: Newspaper
   },
   default: {
@@ -53,7 +53,7 @@ const PostsSection = () => {
     },
     {
       title: "AWS DevOps Module",
-      excerpt: "Panduan lengkap untuk membangun modul AWS DevOps yang mencakup Jenkins, Terraform, Docker, dan Kubernetes.",
+      excerpt: "Panduan lengkap untuk membangun modul AWS DevOps yang mencakup Jenkins, Terraform, Docker, dan Kubernetes.Project ini Di Kerjakan bersama Teman saya di organisasi KITS (Komunitas IT SMKN 1 NGLEGOK).",
       date: "2025-06-28",
       readTime: "6 jam",
       tags: ["AWS", "IaC", "Cloud", "DevOps"],
@@ -64,7 +64,7 @@ const PostsSection = () => {
     {
       title: "MTCNA Module: MikroTik Certified Network Associate",
       excerpt: "Panduan lengkap untuk mempersiapkan sertifikasi MTCNA dengan fokus pada konfigurasi jaringan menggunakan perangkat MikroTik.",
-      date: "2025-04-21",
+      date: "2024-04-21",
       readTime: "6 Jam",
       tags: ["Winbox", "Mikrotik", "Network"],
       links: [
@@ -74,7 +74,7 @@ const PostsSection = () => {
     {
       title: "Debian Linux Server - System Administration Module",
       excerpt: "Modul administrasi sistem untuk Debian Linux Server yang mencakup instalasi, konfigurasi, dan manajemen layanan server.",
-      date: "2025-03-21",
+      date: "2024-03-21",
       readTime: "6 Jam",
       tags: ["Server", "Linux", "SystemAdministration"],
       links: [
@@ -111,7 +111,82 @@ const PostsSection = () => {
         { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Hands-on-Kubernetes-Labs' }
       ]
     },
+    {
+      title: "Hands On IAC with Terraform: AWS & GCP",
+      excerpt: "Sebuah Project yang saya rancang untuk dokumentasi saya saat mempelajari Infrastructure as Code (IaC) menggunakan Terraform pada AWS dan GCP.",
+      date: "2025-05-01",
+      readTime: "8 Jam",
+      tags: ["Terraform", "DevOps", "Cloud"],
+      links: [
+        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Terraform-AWS-GCP-IAC' }
+      ]
+    },
+    {
+      title: "Hands On Ansible Labs",
+      excerpt: "Sebuah Project yang saya rancang untuk dokumentasi saya saat mempelajari Ansible melalui serangkaian lab yang tersusun rapi.",
+      date: "2025-05-20",
+      readTime: "8 Jam",
+      tags: ["Ansible", "DevOps", "Infrastructure"],
+      links: [
+        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Hands-on-Ansible-Labs' },
+        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/05/write-up-learning-ansible.html' }
+      ]
+    },
+    {
+      title: "Hands On Docker Labs",
+      excerpt: "Sebuah project yang saya rancang untuk dokumentasi saya saat mempelajari Docker melalui serangkaian lab yang tersusun rapi.",
+      date: "2025-03-01",
+      readTime: "8 Jam",
+      tags: ["Docker", "DevOps", "Containerization"],
+      links: [
+        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Hands-on-Docker-Labs' },
+        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/03/write-up-task-and-learning-adinusa.html' }
+      ]
+    },
+    {
+      title: "Write Up Jenkins CI/CD",
+      excerpt: "Write up lengkap tentang Jenkins CI/CD yang mencakup instalasi, konfigurasi pipeline, dan praktik terbaik untuk otomatisasi pengiriman perangkat lunak.",
+      date: "2025-04-01",
+      readTime: "8 Jam",
+      tags: ["Jenkins", "DevOps", "CI/CD"],
+      links: [
+        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Learn-Jenkins-Pipeline' },
+        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/11/write-up-jenkins.html' }
+      ]
+    },
+    {
+      title: "Terraform on AWS: Hands On Labs",
+      excerpt: "Terraform hands on labs yang dirancang untuk mempelajari penggunaan Terraform dalam mengelola infrastruktur AWS secara otomatis.",
+      date: "2025-02-01",
+      readTime: "8 Jam",
+      tags: ["Terraform", "DevOps", "Infrastructure as Code"],
+      links: [
+        { platform: 'github', url: 'https://github.com/MochamadAbdulRouf/Terraform-AWS' }
+      ]
+    },
+    {
+      title: "Write Up Gitlab CI/CD",
+      excerpt: "Gitlab merupakan salah satu tools DevOps yang populer digunakan untuk mengelola repository kode sumber dan mengotomatisasi proses CI/CD.",
+      date: "2025-07-01",
+      readTime: "8 Jam",
+      tags: ["Gitlab", "DevOps", "CI/CD"],
+      links: [
+        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/11/hands-on-gitlab.html' }
+      ]
+    },
+    {
+      title: "Write Timeline Cloud DevOps AWS",
+      excerpt: "Membuat timeline target belajar Cloud DevOps selama 1 bulan bersama teman saya di Komunitas IT SMKN 1 NGLEGOK (KITS).",
+      date: "2025-06-01",
+      readTime: "8 Jam",
+      tags: ["AWS", "DevOps", "Cloud"],
+      links: [
+        { platform: 'drive', url: 'https://docs.google.com/spreadsheets/d/1CI6FFcBmYqcSwVzNufGSz6hgb-z9PX5aseI7ZI3KoCo/edit?usp=sharing' }
+      ]
+    },
   ];
+
+
 
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString("en-US", {
@@ -219,19 +294,7 @@ const PostsSection = () => {
             </a>
           </Button>
 
-          {/* Tombol 2: BLOGGER */}
-          <Button size="lg" asChild>
-            <a 
-              href="https://mochabdulrouf.blogspot.com/" // <-- GANTI DENGAN LINK PROFIL ANDA
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <BookOpen className="mr-2 h-5 w-5" />
-              My Blogger Profile
-            </a>
-          </Button>
-
-          {/* Tombol 3: GITHUB (Contoh) */}
+          {/* Tombol 2: GITHUB (Contoh) */}
           <Button size="lg" asChild>
             <a 
               href="https://github.com/MochamadAbdulRouf" // <-- GANTI DENGAN LINK PROFIL ANDA
@@ -240,6 +303,18 @@ const PostsSection = () => {
             >
               <Github className="mr-2 h-5 w-5" />
               My GitHub Profile
+            </a>
+          </Button>
+
+          {/* Tombol 3: BLOGGER */}
+          <Button size="lg" asChild>
+            <a 
+              href="https://mochabdulrouf.blogspot.com/" // <-- GANTI DENGAN LINK PROFIL ANDA
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <BookOpen className="mr-2 h-5 w-5" />
+              My Blogger Profile
             </a>
           </Button>
 

@@ -28,11 +28,11 @@ const PostsPreview = () => {
       tags: ["Kubernetes", "DevOps", "Cloud"],
     },
     {
-      title: "Infrastructure as Code: Terraform Best Practices",
-      excerpt: "Explore advanced Terraform patterns, state management strategies, and module design principles for scalable infrastructure.",
-      date: "2024-03-10",
-      readTime: "10 min read",
-      tags: ["Terraform", "IaC", "Cloud"],
+      title: "Hands On IAC with Terraform: AWS & GCP",
+      excerpt: "Sebuah Project yang saya rancang untuk dokumentasi saya saat mempelajari Infrastructure as Code (IaC) menggunakan Terraform pada AWS dan GCP.",
+      date: "2025-09-01",
+      readTime: "8 Jam",
+      tags: ["Terraform", "DevOps", "Cloud"],
     },
   ];
 
