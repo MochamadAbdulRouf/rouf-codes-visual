@@ -21,7 +21,7 @@ const About = () => {
               cloud technologies, container orchestration, and infrastructure automation. I believe in 
               continuous learning and staying updated with the latest DevOps practices.
             </p>
-            <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Skills & Expertise</h2>
+            <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Skills & Tech Stack</h2>
             <ul className="space-y-2 text-muted-foreground">
               <li>• Linux Server Administration</li>
               <li>• Kubernetes & Container Orchestration</li>
@@ -34,8 +34,10 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer />  
     </div>
+    
+    
   );
 };
 
