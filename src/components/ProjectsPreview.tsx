@@ -7,16 +7,28 @@ import { Link } from "react-router-dom";
 const ProjectsPreview = () => {
   const projects = [
     {
-      title: "Kubernetes Cluster Automation",
-      description: "Automated Kubernetes cluster provisioning and management using Terraform and Ansible on GCP.",
-      techStack: ["Kubernetes", "Terraform", "Ansible", "GCP"],
-      github: "https://github.com",
+      title: "Implementing Application Deployment Using GKE and AR(Artifact Registry)",
+      description: "Implementasi Proses Deployment Aplikasi pada Google Kubernetes Engine (GKE) dengan menggunakan Artifact Registry (AR) sebagai tempat penyimpanan Docker Image dan Bash untuk melakukan pembuatan cluster GKE secara otomatis.",
+      techStack: ["AR", "Bash", "GCP", "AWS"],
+      github: "https://github.com/MochamadAbdulRouf/gke-valkyrie-app",
     },
     {
-      title: "CI/CD Pipeline for Microservices",
-      description: "Built end-to-end CI/CD pipeline with Jenkins and GitHub Actions for containerized microservices.",
-      techStack: ["Jenkins", "GitHub Actions", "Docker", "AWS"],
-      github: "https://github.com",
+      title: "GKE Managed Prometheus Exporter Metrics",
+      description: "Manage service untuk mengumpulkan metric dari infrastructure cloud source menggunakan exportes.",
+      techStack: ["Prometheus", "GKE", "GCP",],
+      github: "https://github.com/MochamadAbdulRouf/gke-managed-prometheus-exporter-metrics",
+    },
+    {
+      title: "Fullstack Application Deployment with Docker and Kubernetes",
+      description: "Sebuah Aplikasi fullstack ReactJS dan TypeScript Menggunakan Backend Ai dari Lovable Cloud, Lalu melakukan Set Up Topologi best practice untuk melakukan Deployment di Production.",
+      techStack: ["Containerized", "Orchestration", "Docker", "Kubernetes"],
+      github: "https://github.com/MochamadAbdulRouf/myz-universe-reader",
+    },
+    {
+      title: "Automation Build Docker Image for NodeJS Application",
+      description: "Automasi proses build dan push Docker Image untuk Aplikasi NodeJS menggunakan GitHub Actions sebagai CI/CD tool.",
+      techStack: ["CI/CD", "Github Action", "Container", "Docker"],
+      github: "https://github.com/MochamadAbdulRouf/automation-build-docker-nodejs",
     },
   ];
 

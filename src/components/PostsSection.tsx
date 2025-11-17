@@ -176,12 +176,22 @@ const PostsSection = () => {
     },
     {
       title: "Write Timeline Cloud DevOps AWS",
-      excerpt: "Membuat timeline target belajar Cloud DevOps selama 1 bulan bersama teman saya di Komunitas IT SMKN 1 NGLEGOK (KITS).",
+      excerpt: "Membuat timeline target belajar Cloud DevOps selama 1 Semester bersama teman saya di Komunitas IT SMKN 1 NGLEGOK (KITS).",
       date: "2025-06-01",
       readTime: "8 Jam",
       tags: ["AWS", "DevOps", "Cloud"],
       links: [
         { platform: 'drive', url: 'https://docs.google.com/spreadsheets/d/1CI6FFcBmYqcSwVzNufGSz6hgb-z9PX5aseI7ZI3KoCo/edit?usp=sharing' }
+      ]
+    },
+    {
+      title: "Implementation of WireGuard VPN and Tailscale",
+      excerpt: "Implementasi WireGuard VPN dan TailScale untuk mengamankan koneksi jaringan dan membuat VPN yang aman dan cepat.",
+      date: "2025-08-10",
+      readTime: "2 Jam",
+      tags: ["VPN", "Wireguard", "Tailscale"],
+      links: [
+        { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/11/wireguard-and-tail-scale.html' }
       ]
     },
   ];
