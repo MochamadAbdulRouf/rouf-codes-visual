@@ -48,11 +48,11 @@ const About = () => {
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
                 <img src={awsLogo} alt="Cloud (GCP/AWS)" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground text-center">AWS<br></br>(Amazon Web Service)</span>
+                <span className="text-sm font-medium text-foreground text-center">AWS (Amazon Web Service)</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
                 <img src={gcpLogo} alt="Cloud (GCP/AWS)" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground text-center">GCP<br></br>(Google Cloud Platform)</span>
+                <span className="text-sm font-medium text-foreground text-center">GCP (Google Cloud Platform)</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
                 <img src={dockerLogo} alt="Docker" className="h-12 w-12 object-contain" />
