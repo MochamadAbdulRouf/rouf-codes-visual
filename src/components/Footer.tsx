@@ -2,12 +2,12 @@ import { Linkedin, Github, Instagram, Mail, FileText, BookOpen } from "lucide-re
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
-    { icon: FileText, href: "https://medium.com", label: "Medium" },
-    { icon: BookOpen, href: "https://blogger.com", label: "Blogger" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/mochabdulrouf/", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/mochabdlrouf/", label: "Instagram" },
+    { icon: Github, href: "https://github.com/MochamadAbdulRouf", label: "GitHub" },
+    { icon: Mail, href: "mailto:mochamadabdulrouf1@gmail.com", label: "Email" },
+    { icon: FileText, href: "https://medium.com/@rouf08412", label: "Medium" },
+    { icon: BookOpen, href: "https://mochabdulrouf.blogspot.com/", label: "Blogger" },
   ];
 
   return (
@@ -16,8 +16,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Left - Logo/Name */}
           <div className="flex items-center gap-3 text-lg font-semibold text-foreground">
-            <img src="/placeholder.svg" alt="Logo" className="h-8 w-8 object-contain" />
-            <span>Mochamad Abdul Rouf | @2025</span>
+            <img src="/public/logo-gw.png" alt="Logo" className="h-6x  w-6 object-contain" />
+            <span className="text-sm">© 2025 Mochamad Abdul Rouf — All rights reserved.</span>
           </div>
 
           {/* Right - Social Media Icons */}
