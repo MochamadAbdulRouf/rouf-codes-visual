@@ -1,6 +1,6 @@
 import { Linkedin, Github, Instagram, Mail, BookOpen, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import avatarImage from "@/assets/avatar.jpg";
+import avatarImage from "@/assets/me.jpg";
 
 const HeroSection = () => {
   const socialLinks = [
