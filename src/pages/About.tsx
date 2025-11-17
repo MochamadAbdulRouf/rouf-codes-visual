@@ -28,35 +28,47 @@ const About = () => {
             {/* Tech Stack Icons Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-8">
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src="/placeholder.svg" alt="Linux Server" className="h-12 w-12 object-contain" />
+                <img src="/src/assets/linux.svg" alt="Linux Server" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Linux Server</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src="/placeholder.svg" alt="Kubernetes" className="h-12 w-12 object-contain" />
+                <img src="/src/assets/kube-logo.svg" alt="Kubernetes" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Kubernetes</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src="/placeholder.svg" alt="Cloud (GCP/AWS)" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">Cloud (GCP/AWS)</span>
+                <img src="/src/assets/logo-aws.svg" alt="Cloud (GCP/AWS)" className="h-12 w-12 object-contain" />
+                <span className="text-sm font-medium text-foreground text-center">AWS<br></br>(Amazon Web Service)</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src="/placeholder.svg" alt="Docker" className="h-12 w-12 object-contain" />
+                <img src="/src/assets/gcp-logo.svg" alt="Cloud (GCP/AWS)" className="h-12 w-12 object-contain" />
+                <span className="text-sm font-medium text-foreground text-center">GCP<br></br>(Google Cloud Platform)</span>
+              </div>
+              <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
+                <img src="/src/assets/docker-logo.svg" alt="Docker" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Docker</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src="/placeholder.svg" alt="CI/CD" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">CI/CD</span>
+                <img src="/src/assets/jenkins-logo.svg" alt="CI/CD" className="h-12 w-12 object-contain" />
+                <span className="text-sm font-medium text-foreground">Jenkins</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src="/placeholder.svg" alt="IaC (Terraform, Ansible)" className="h-12 w-12 object-contain" />
-                <span className="text-sm font-medium text-foreground">IaC</span>
+                <img src="/src/assets/github-action-logo.svg" alt="CI/CD" className="h-12 w-12 object-contain" />
+                <span className="text-sm font-medium text-foreground">Github Action</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src="/placeholder.svg" alt="Prometheus" className="h-12 w-12 object-contain" />
+                <img src="/src/assets/terraform.svg" alt="CI/CD" className="h-12 w-12 object-contain" />
+                <span className="text-sm font-medium text-foreground">Terraform</span>
+              </div>
+              <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
+                <img src="/src/assets/ansible.svg" alt="IaC (Terraform, Ansible)" className="h-12 w-12 object-contain" />
+                <span className="text-sm font-medium text-foreground">Ansible</span>
+              </div>
+              <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
+                <img src="/src/assets/prometheus.svg" alt="Prometheus" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Prometheus</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <img src="/placeholder.svg" alt="Grafana" className="h-12 w-12 object-contain" />
+                <img src="/src/assets/grafana.svg" alt="Grafana" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Grafana</span>
               </div>
             </div>
