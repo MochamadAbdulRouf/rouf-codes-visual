@@ -14,6 +14,9 @@ import ansibleLogo from "@/assets/ansible.svg";
 import prometheusLogo from "@/assets/prometheus.svg";
 import grafanaLogo from "@/assets/grafana.svg";
 
+// Alias to avoid production crash if older code references `linuxlogo`
+const linuxlogo = linuxLogo;
+
 const About = () => {
   return (
     <div className="min-h-screen">
