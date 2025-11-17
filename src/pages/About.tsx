@@ -2,7 +2,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Server, Container, Cloud, FileCode, GitBranch, Settings, Activity, BarChart } from "lucide-react";
 
 const About = () => {
   return (
@@ -29,35 +28,35 @@ const About = () => {
             {/* Tech Stack Icons Grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 my-8">
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <Server className="h-8 w-8 text-primary" />
+                <img src="/placeholder.svg" alt="Linux Server" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Linux Server</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <Container className="h-8 w-8 text-primary" />
+                <img src="/placeholder.svg" alt="Kubernetes" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Kubernetes</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <Cloud className="h-8 w-8 text-primary" />
+                <img src="/placeholder.svg" alt="Cloud (GCP/AWS)" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Cloud (GCP/AWS)</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <Container className="h-8 w-8 text-primary" />
+                <img src="/placeholder.svg" alt="Docker" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Docker</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <GitBranch className="h-8 w-8 text-primary" />
+                <img src="/placeholder.svg" alt="CI/CD" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">CI/CD</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <FileCode className="h-8 w-8 text-primary" />
+                <img src="/placeholder.svg" alt="IaC (Terraform, Ansible)" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">IaC</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <Activity className="h-8 w-8 text-primary" />
+                <img src="/placeholder.svg" alt="Prometheus" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Prometheus</span>
               </div>
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
-                <BarChart className="h-8 w-8 text-primary" />
+                <img src="/placeholder.svg" alt="Grafana" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Grafana</span>
               </div>
             </div>
