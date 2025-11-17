@@ -75,7 +75,7 @@ const About = () => {
             {/* Navigation Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mt-12 pt-8 border-t border-border">
               <Link to="/projects" className="flex-1">
-                <Button variant="default" size="lg" className="w-full">
+                <Button variant="outline" size="lg" className="w-full">
                   View My Projects
                 </Button>
               </Link>
