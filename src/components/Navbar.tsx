@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 text-lg font-semibold text-foreground hover:text-primary transition-colors">
-            <img src="/public/logo-gw.png" alt="Logo" className="h-8 w-8 object-contain" />
+            <img src="/logo-gw.png" alt="Logo" className="h-8 w-8 object-contain" />
             <span>Mochamad Abdul Rouf's Portfolio</span>
           </Link>
           

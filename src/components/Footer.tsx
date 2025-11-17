@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Left - Logo/Name */}
           <div className="flex items-center gap-3 text-lg font-semibold text-foreground">
-            <img src="/public/logo-gw.png" alt="Logo" className="h-6x  w-6 object-contain" />
+            <img src="/logo-gw.png" alt="Logo" className="h-6 w-6 object-contain" />
             <span className="text-sm">© 2025 Mochamad Abdul Rouf — All rights reserved.</span>
           </div>
 
