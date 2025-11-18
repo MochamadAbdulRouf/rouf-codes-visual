@@ -13,6 +13,7 @@ import terraformLogo from "@/assets/terraform.svg";
 import ansibleLogo from "@/assets/ansible.svg";
 import prometheusLogo from "@/assets/prometheus.svg";
 import grafanaLogo from "@/assets/grafana.svg";
+import bashlogo from "@/assets/bash.png";
 
 // Alias to avoid production crash if older code references `linuxlogo`
 const linuxlogo = linuxLogo;
@@ -84,6 +85,10 @@ const About = () => {
               <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
                 <img src={grafanaLogo} alt="Grafana" className="h-12 w-12 object-contain" />
                 <span className="text-sm font-medium text-foreground">Grafana</span>
+              </div>
+              <div className="flex flex-col items-center gap-3 p-4 rounded-lg border border-border bg-card hover:bg-accent transition-colors">
+                <img src={bashlogo} alt="BashScript" className="h-12 w-12 object-contain" />
+                <span className="text-sm font-medium text-foreground">Bash Scripting</span>
               </div>
             </div>
 
