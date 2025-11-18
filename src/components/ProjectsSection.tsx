@@ -71,6 +71,12 @@ const ProjectsSection = () => {
       techStack: ["Prometheus", "GKE", "GCP",],
       github: "https://github.com/MochamadAbdulRouf/gke-managed-prometheus-exporter-metrics",
     },
+    {
+      title: "Bash Scripting Automation Setup Server",
+      description: "Kumpulan project script untuk automatisasi setup server seperti log archive tool, server performance stats, dll.",
+      techStack: ["Bash", "Linux", "Scripting",],
+      github: "https://github.com/MochamadAbdulRouf/Hands-on-Bash-Script-Labs",
+    },
   ];
 
   return (
