@@ -77,6 +77,12 @@ const ProjectsSection = () => {
       techStack: ["Bash", "Linux", "Scripting",],
       github: "https://github.com/MochamadAbdulRouf/Hands-on-Bash-Script-Labs",
     },
+    {
+      title: "Automated Server Hardening & Docker Provisioning with Ansible",
+      description: "Project ini mengimplementasikan penggunaan Ansible untuk mengotomatisasi proses penyedian server(server provisioning) dari fresh os menjadi siap produksi, Fokus utama project ini adalah keamanan (Security Hardening) dan persiapan lingkungan container (Docker environment). ",
+      techStack: ["DevOps", "IAC", "Ansible",],
+      github: "https://github.com/MochamadAbdulRouf/Hands-on-Ansible-Labs/tree/master/ansible-server-hardening",
+    },
   ];
 
   return (
