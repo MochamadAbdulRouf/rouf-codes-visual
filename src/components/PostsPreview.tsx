@@ -8,28 +8,28 @@ const PostsPreview = () => {
   const posts = [
     {
       title: "Continuous Delivery with Jenkins in Kubernetes Engine GCP (Google Cloud Platform)",
-      excerpt: "Set Up Aplikasi menggunakan Jenkins di Google Kubernetes Engine untuk mengotomatisasi proses Continuous Delivery.",
+      excerpt: "Set up applications using Jenkins on Google Kubernetes Engine to automate the Continuous Delivery process.",
       date: "2025-08-29",
       readTime: "2 Jam",
       tags: ["Kubernetes", "GCP", "Jenkins", "CI/CD", "DevOps", "Cloud"],
     },
     {
       title: "Setup Jenkins With Kubernetes Engine GCP (Google Cloud Platform)",
-      excerpt: "Mengkonfigurasi Jenkins di Google Kubernetes Engine untuk membantu mengelola alur CI/CD Aplikasi.",
+      excerpt: "Configuring Jenkins in Google Kubernetes Engine to help manage the CI/CD pipeline of applications.",
       date: "2025-08-29",
       readTime: "2 Jam",
       tags: ["AWS", "GCP", "Jenkins", "Kubernetes", "DevOps", "Cloud"],
     },
     {
       title: "Hands On Kubernetes Labs",
-      excerpt: "Sebuah Project yang saya rancang untuk dokumentasi saya saat mempelajari Kubernetes melalui serangkaian lab yang tersusun rapi.",
+      excerpt: "A project I designed for my documentation while learning Kubernetes through a series of well-organized labs.",
       date: "2025-09-01",
       readTime: "8 Jam",
       tags: ["Kubernetes", "DevOps", "Cloud"],
     },
     {
       title: "Hands On IAC with Terraform: AWS & GCP",
-      excerpt: "Sebuah Project yang saya rancang untuk dokumentasi saya saat mempelajari Infrastructure as Code (IaC) menggunakan Terraform pada AWS dan GCP.",
+      excerpt: "A project I designed for my documentation while learning Infrastructure as Code (IaC) using Terraform on AWS and GCP.",
       date: "2025-09-01",
       readTime: "8 Jam",
       tags: ["Terraform", "DevOps", "Cloud"],

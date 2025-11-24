@@ -41,8 +41,8 @@ const linkDetails = {
 const PostsSection = () => {
   const posts = [
     {
-      title: "Deploy Aplikasi Laravel Perpusku dengan Docker & Docker Compose",
-      excerpt: "Melakukan deployment aplikasi Laravel Perpusku menggunakan Docker dan Docker Compose untuk kemudahan pengelolaan container.",
+      title: "Deploy the Perpusku Laravel Application with Docker & Docker Compose",
+      excerpt: "Deploying the Perpusku Laravel application using Docker and Docker Compose for easy container management.",
       date: "2025-07-10",
       readTime: "2 Jam",
       tags: ["Docker", "DevOps", "Deployment"],
@@ -53,7 +53,7 @@ const PostsSection = () => {
     },
     {
       title: "AWS DevOps Module",
-      excerpt: "Panduan lengkap untuk membangun modul AWS DevOps yang mencakup Jenkins, Terraform, Docker, dan Kubernetes.Project ini Di Kerjakan bersama Teman saya di organisasi KITS (Komunitas IT SMKN 1 NGLEGOK).",
+      excerpt: "A comprehensive guide to building AWS DevOps modules that include Jenkins, Terraform, Docker, and Kubernetes. This project was carried out with my friends at KITS (IT Community of SMKN 1 NGLEGOK).",
       date: "2025-06-28",
       readTime: "6 jam",
       tags: ["AWS", "IaC", "Cloud", "DevOps"],
@@ -63,7 +63,7 @@ const PostsSection = () => {
     },
     {
       title: "MTCNA Module: MikroTik Certified Network Associate",
-      excerpt: "Panduan lengkap untuk mempersiapkan sertifikasi MTCNA dengan fokus pada konfigurasi jaringan menggunakan perangkat MikroTik.",
+      excerpt: "A comprehensive guide to preparing for MTCNA certification with a focus on network configuration using MikroTik devices.",
       date: "2024-04-21",
       readTime: "6 Jam",
       tags: ["Winbox", "Mikrotik", "Network"],
@@ -73,7 +73,7 @@ const PostsSection = () => {
     },
     {
       title: "Debian Linux Server - System Administration Module",
-      excerpt: "Modul administrasi sistem untuk Debian Linux Server yang mencakup instalasi, konfigurasi, dan manajemen layanan server.",
+      excerpt: "System administration module for Debian Linux Server that covers installation, configuration, and management of server services.",
       date: "2024-03-21",
       readTime: "6 Jam",
       tags: ["Server", "Linux", "SystemAdministration"],
@@ -83,7 +83,7 @@ const PostsSection = () => {
     },
     {
       title: "Continuous Delivery with Jenkins in Kubernetes Engine GCP (Google Cloud Platform)",
-      excerpt: "Set Up Aplikasi menggunakan Jenkins di Google Kubernetes Engine untuk mengotomatisasi proses Continuous Delivery.",
+      excerpt: "Set up applications using Jenkins on Google Kubernetes Engine to automate the Continuous Delivery process.",
       date: "2025-08-29",
       readTime: "2 Jam",
       tags: ["Kubernetes", "GCP", "Jenkins", "CI/CD", "DevOps", "Cloud"],
@@ -93,7 +93,7 @@ const PostsSection = () => {
     },
     {
       title: "Setup Jenkins With Kubernetes Engine GCP (Google Cloud Platform)",
-      excerpt: "Mengkonfigurasi Jenkins di Google Kubernetes Engine untuk membantu mengelola alur CI/CD Aplikasi.",
+      excerpt: "Configuring Jenkins in Google Kubernetes Engine to help manage the CI/CD pipeline for applications.",
       date: "2025-08-29",
       readTime: "2 Jam",
       tags: ["AWS", "GCP", "Jenkins", "Kubernetes", "DevOps", "Cloud"],
@@ -103,7 +103,7 @@ const PostsSection = () => {
     },
     {
       title: "Hands On Kubernetes Labs",
-      excerpt: "Sebuah Project yang saya rancang untuk dokumentasi saya saat mempelajari Kubernetes melalui serangkaian lab yang tersusun rapi.",
+      excerpt: "A project I designed for my documentation while learning Kubernetes through a series of neatly organized labs.",
       date: "2025-09-01",
       readTime: "8 Jam",
       tags: ["Kubernetes", "DevOps", "Cloud"],
@@ -113,7 +113,7 @@ const PostsSection = () => {
     },
     {
       title: "Hands On IAC with Terraform: AWS & GCP",
-      excerpt: "Sebuah Project yang saya rancang untuk dokumentasi saya saat mempelajari Infrastructure as Code (IaC) menggunakan Terraform pada AWS dan GCP.",
+      excerpt: "A project I designed for my documentation while learning Infrastructure as Code (IaC) using Terraform on AWS and GCP.",
       date: "2025-05-01",
       readTime: "8 Jam",
       tags: ["Terraform", "DevOps", "Cloud"],
@@ -123,7 +123,7 @@ const PostsSection = () => {
     },
     {
       title: "Hands On Ansible Labs",
-      excerpt: "Sebuah Project yang saya rancang untuk dokumentasi saya saat mempelajari Ansible melalui serangkaian lab yang tersusun rapi.",
+      excerpt: "A project I designed for my documentation while learning Ansible through a series of neatly organized labs.",
       date: "2025-05-20",
       readTime: "8 Jam",
       tags: ["Ansible", "DevOps", "Infrastructure"],
@@ -134,7 +134,7 @@ const PostsSection = () => {
     },
     {
       title: "Hands On Docker Labs",
-      excerpt: "Sebuah project yang saya rancang untuk dokumentasi saya saat mempelajari Docker melalui serangkaian lab yang tersusun rapi.",
+      excerpt: "A project I designed for my documentation while learning Docker through a series of neatly organized labs.",
       date: "2025-03-01",
       readTime: "8 Jam",
       tags: ["Docker", "DevOps", "Containerization"],
@@ -145,7 +145,7 @@ const PostsSection = () => {
     },
     {
       title: "Write Up Jenkins CI/CD",
-      excerpt: "Write up lengkap tentang Jenkins CI/CD yang mencakup instalasi, konfigurasi pipeline, dan praktik terbaik untuk otomatisasi pengiriman perangkat lunak.",
+      excerpt: "A comprehensive write-up about Jenkins CI/CD covering installation, pipeline configuration, and best practices for software delivery automation.",
       date: "2025-04-01",
       readTime: "8 Jam",
       tags: ["Jenkins", "DevOps", "CI/CD"],
@@ -156,7 +156,7 @@ const PostsSection = () => {
     },
     {
       title: "Terraform on AWS: Hands On Labs",
-      excerpt: "Terraform hands on labs yang dirancang untuk mempelajari penggunaan Terraform dalam mengelola infrastruktur AWS secara otomatis.",
+      excerpt: "Terraform hands-on labs designed to learn how to use Terraform to automatically manage AWS infrastructure.",
       date: "2025-02-01",
       readTime: "8 Jam",
       tags: ["Terraform", "DevOps", "Infrastructure as Code"],
@@ -166,7 +166,7 @@ const PostsSection = () => {
     },
     {
       title: "Write Up Gitlab CI/CD",
-      excerpt: "Gitlab merupakan salah satu tools DevOps yang populer digunakan untuk mengelola repository kode sumber dan mengotomatisasi proses CI/CD.",
+      excerpt: "Gitlab is one of the most popular DevOps tools used to manage source code repositories and automate CI/CD processes.",
       date: "2025-07-01",
       readTime: "8 Jam",
       tags: ["Gitlab", "DevOps", "CI/CD"],
@@ -176,7 +176,7 @@ const PostsSection = () => {
     },
     {
       title: "Write Timeline Cloud DevOps AWS",
-      excerpt: "Membuat timeline target belajar Cloud DevOps selama 1 Semester bersama teman saya di Komunitas IT SMKN 1 NGLEGOK (KITS).",
+      excerpt: "Creating a timeline for learning Cloud DevOps over one semester with my friends at the SMKN 1 NGLEGOK IT Community (KITS).",
       date: "2025-06-01",
       readTime: "8 Jam",
       tags: ["AWS", "DevOps", "Cloud"],
@@ -186,7 +186,7 @@ const PostsSection = () => {
     },
     {
       title: "Implementation of WireGuard VPN and Tailscale",
-      excerpt: "Implementasi WireGuard VPN dan TailScale untuk mengamankan koneksi jaringan dan membuat VPN yang aman dan cepat.",
+      excerpt: "Implementation of WireGuard VPN and TailScale to secure network connections and create a secure and fast VPN.",
       date: "2025-08-10",
       readTime: "2 Jam",
       tags: ["VPN", "Wireguard", "Tailscale"],

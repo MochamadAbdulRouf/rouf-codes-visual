@@ -8,25 +8,25 @@ const ProjectsPreview = () => {
   const projects = [
     {
       title: "Implementing Application Deployment Using GKE and AR(Artifact Registry)",
-      description: "Implementasi Proses Deployment Aplikasi pada Google Kubernetes Engine (GKE) dengan menggunakan Artifact Registry (AR) sebagai tempat penyimpanan Docker Image dan Bash untuk melakukan pembuatan cluster GKE secara otomatis.",
+      description: "Implementation of Application Deployment Process on Google Kubernetes Engine (GKE) using Artifact Registry (AR) as a storage place for Docker Image and Bash to automatically create a GKE cluster.",
       techStack: ["AR", "Bash", "GCP", "AWS"],
       github: "https://github.com/MochamadAbdulRouf/gke-valkyrie-app",
     },
     {
       title: "GKE Managed Prometheus Exporter Metrics",
-      description: "Manage service untuk mengumpulkan metric dari infrastructure cloud source menggunakan exportes.",
+      description: "Manage services to collect metrics from cloud source infrastructure using exporters.",
       techStack: ["Prometheus", "GKE", "GCP",],
       github: "https://github.com/MochamadAbdulRouf/gke-managed-prometheus-exporter-metrics",
     },
     {
       title: "Fullstack Application Deployment with Docker and Kubernetes",
-      description: "Sebuah Aplikasi fullstack ReactJS dan TypeScript Menggunakan Backend Ai dari Lovable Cloud, Lalu melakukan Set Up Topologi best practice untuk melakukan Deployment di Production.",
+      description: "A full-stack ReactJS and TypeScript application using Lovable Cloud's AI backend, then setting up best practice topology for deployment in production.",
       techStack: ["Containerized", "Orchestration", "Docker", "Kubernetes"],
       github: "https://github.com/MochamadAbdulRouf/myz-universe-reader",
     },
     {
       title: "Automation Build Docker Image for NodeJS Application",
-      description: "Automasi proses build dan push Docker Image untuk Aplikasi NodeJS menggunakan GitHub Actions sebagai CI/CD tool.",
+      description: "Automate the build and push process of Docker Images for NodeJS Applications using GitHub Actions as a CI/CD tool.",
       techStack: ["CI/CD", "Github Action", "Container", "Docker"],
       github: "https://github.com/MochamadAbdulRouf/automation-build-docker-nodejs",
     },

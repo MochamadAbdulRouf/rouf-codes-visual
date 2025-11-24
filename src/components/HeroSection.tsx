@@ -4,12 +4,12 @@ import avatarImage from "@/assets/me.jpg";
 
 const HeroSection = () => {
   const socialLinks = [
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
-    { icon: FileText, href: "https://medium.com", label: "Medium" },
-    { icon: BookOpen, href: "https://blogger.com", label: "Blogger" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/mochabdulrouf/", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/mochabdlrouf/", label: "Instagram" },
+    { icon: Github, href: "https://github.com/MochamadAbdulRouf", label: "GitHub" },
+    { icon: Mail, href: "mailto:mochamadabdulrouf1@gmail.com", label: "Email" },
+    { icon: FileText, href: "https://medium.com/@rouf08412", label: "Medium" },
+    { icon: BookOpen, href: "https://mochabdulrouf.blogspot.com/", label: "Blogger" },
   ];
 
   const expertise = [
