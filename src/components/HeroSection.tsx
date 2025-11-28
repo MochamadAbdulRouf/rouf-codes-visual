@@ -60,7 +60,7 @@ const HeroSection = () => {
               <Button
                 asChild
                 size="lg"
-                className="gap-2"
+                className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
               >
                 <a
                   href="YOUR_CV_LINK_HERE"
