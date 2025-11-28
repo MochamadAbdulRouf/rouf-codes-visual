@@ -100,7 +100,7 @@ const PostsPreview = () => {
         </div>
 
         <div className="text-center">
-          <Button size="lg" asChild>
+          <Button size="lg" asChild className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50">
             <Link to="/posts">View All My Writing</Link>
           </Button>
         </div>

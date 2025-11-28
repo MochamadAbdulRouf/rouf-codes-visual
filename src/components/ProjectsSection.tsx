@@ -143,7 +143,7 @@ const ProjectsSection = () => {
             </h3>
             <div className="flex justify-center gap-4 flex-wrap">
               {/* Tombol 1: GITHUB (Contoh) */}
-              <Button size="lg" asChild>
+              <Button size="lg" asChild className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50">
                 <a 
                   href="https://github.com/MochamadAbdulRouf" // <-- GANTI DENGAN LINK PROFIL ANDA
                   target="_blank" 
