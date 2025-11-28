@@ -63,7 +63,7 @@ const HeroSection = () => {
                 className="gap-2 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50"
               >
                 <a
-                  href="YOUR_CV_LINK_HERE"
+                  href="https://drive.google.com/file/d/1WibicNYyreZtrDQFLQwxFGIaf9l28ZjT/view?usp=sharing"
                   download
                   target="_blank"
                   rel="noopener noreferrer"
