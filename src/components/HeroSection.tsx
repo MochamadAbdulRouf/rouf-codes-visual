@@ -1,4 +1,4 @@
-import { Linkedin, Github, Instagram, Mail, BookOpen, FileText } from "lucide-react";
+import { Linkedin, Github, Instagram, Mail, BookOpen, FileText, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import avatarImage from "@/assets/me.jpg";
 
@@ -54,6 +54,24 @@ const HeroSection = () => {
                   </li>
                 ))}
               </ul>
+            </div>
+
+            <div className="pt-6">
+              <Button
+                asChild
+                size="lg"
+                className="gap-2"
+              >
+                <a
+                  href="YOUR_CV_LINK_HERE"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Download className="h-5 w-5" />
+                  Download CV
+                </a>
+              </Button>
             </div>
 
             <div className="flex items-center gap-4 pt-4">
