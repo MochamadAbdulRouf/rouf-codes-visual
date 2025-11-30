@@ -84,7 +84,7 @@ const ProjectsSection = () => {
       github: "https://github.com/MochamadAbdulRouf/Hands-on-Ansible-Labs/tree/master/ansible-server-hardening",
     },
     {
-      title: "Local Enterprise Grade Secure CI/CD Pipeline",
+      title: "Automated Pipeline: Jenkins, Docker, and SonarQube",
       description: "This project includes the phases of Code Integration, Quality Inspection, Security Scanning, Containerization, and Automated Deployment to separate production servers.",
       techStack: ["DevOps", "CI/CD", "Docker", "Container", "Sonar Qube", "Jenkins",],
       github: "https://github.com/MochamadAbdulRouf/Local-Enterprise-Grade-Secure-CI-CD-Pipeline",
