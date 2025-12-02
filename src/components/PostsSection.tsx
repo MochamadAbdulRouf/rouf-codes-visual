@@ -194,6 +194,26 @@ const PostsSection = () => {
         { platform: 'blogger', url: 'https://mochabdulrouf.blogspot.com/2025/11/wireguard-and-tail-scale.html' }
       ]
     },
+    {
+      title: "Cloud Logging on Kubernetes",
+      excerpt: "Cloud Logging can be used aggregate logs from all Google Cloud resources, as well as any custom resources on other platforms, to allow for one centralized store for all logs and metrics.",
+      date: "2025-12-02",
+      readTime: "2 Jam",
+      tags: ["GCP", "Terraform", "Kubernetes", "DevOps", "Cloud"],
+      links: [
+        { platform: 'medium', url: 'https://medium.com/@rouf08412/cloud-logging-on-kubernetes-4aa0bc8ff98f' }
+      ]
+    },
+    {
+      title: "Deploy Kubernetes Load Balancer Service with Terraform",
+      excerpt: "In Terraform, a Provider is the logical abstraction of an upstream API. This lab will show you how to set up a Kubernetes cluster and deploy Load Balancer type NGINX service on it.",
+      date: "2025-12-02",
+      readTime: "2 Jam",
+      tags: ["GCP", "Terraform", "Kubernetes", "DevOps", "Cloud"],
+      links: [
+        { platform: 'medium', url: 'https://medium.com/@rouf08412/deploy-kubernetes-load-balancer-service-with-terraform-47ee1966b2ce' }
+      ]
+    },
   ];
 
 

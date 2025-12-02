@@ -21,11 +21,11 @@ const PostsPreview = () => {
       tags: ["AWS", "GCP", "Jenkins", "Kubernetes", "DevOps", "Cloud"],
     },
     {
-      title: "Hands On Kubernetes Labs",
-      excerpt: "A project I designed for my documentation while learning Kubernetes through a series of well-organized labs.",
-      date: "2025-09-01",
-      readTime: "8 Jam",
-      tags: ["Kubernetes", "DevOps", "Cloud"],
+      title: "Cloud Logging on Kubernetes",
+      excerpt: "Cloud Logging can be used aggregate logs from all Google Cloud resources, as well as any custom resources on other platforms, to allow for one centralized store for all logs and metrics.",
+      date: "2025-12-02",
+      readTime: "2 Jam",
+      tags: ["GCP", "Terraform", "Kubernetes", "DevOps", "Cloud"],
     },
     {
       title: "Hands On IAC with Terraform: AWS & GCP",
