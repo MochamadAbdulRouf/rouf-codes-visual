@@ -44,8 +44,8 @@ const About = () => {
                   {
                     company: "Jago Web Hosting Indonesia",
                     role: "Wordpress Developer",
-                    period: "Jan 2024 - Present",
-                    location: "Jakarta, Indonesia",
+                    period: "Jun 2025 - Nov 2025",
+                    location: "Special Region of Yogyakarta, Indonesia",
                     description: [
                       "Configuring end-to-end WordPress development projects using Divi & Elementor, including WooCommerce e-commerce websites and product data migration.",
                       "Configuring and managing VPS servers",
