@@ -42,28 +42,20 @@ const About = () => {
               <div className="space-y-8">
                 {[
                   {
-                    company: "Nama Perusahaan",
-                    role: "DevOps Engineer",
+                    company: "Jago Web Hosting Indonesia",
+                    role: "Wordpress Developer",
                     period: "Jan 2024 - Present",
                     location: "Jakarta, Indonesia",
                     description: [
-                      "Mengelola infrastruktur cloud menggunakan AWS dan GCP",
-                      "Implementasi CI/CD pipeline dengan Jenkins dan GitHub Actions",
-                      "Containerization aplikasi menggunakan Docker dan Kubernetes",
-                      "Monitoring dan observability dengan Prometheus dan Grafana",
+                      "Configuring end-to-end WordPress development projects using Divi & Elementor, including WooCommerce e-commerce websites and product data migration.",
+                      "Configuring and managing VPS servers",
+                      "Configuring domain and DNS management (A, CNAME, MX), custom domain settings, and hosting administration.",
+                      "Configuring server security with SSL certificates, HTTPS redirection, and Web Application Firewalls (WAF) such as ModSecurity.",
+                      "Optimizing server performance and resource usage to ensure stability and efficiency.",
+                      "Configuring CWP (Control Web Panel)",
+                      "Configuring cPanel",
                     ],
                   },
-                  // Tambahkan experience baru di sini dengan format yang sama
-                  // {
-                  //   company: "Perusahaan Lain",
-                  //   role: "Junior DevOps",
-                  //   period: "Jun 2023 - Dec 2023",
-                  //   location: "Bandung, Indonesia",
-                  //   description: [
-                  //     "Deskripsi tugas 1",
-                  //     "Deskripsi tugas 2",
-                  //   ],
-                  // },
                 ].map((exp, index) => (
                   <div key={index} className="relative pl-12">
                     {/* Timeline dot */}
