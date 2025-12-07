@@ -89,6 +89,18 @@ const ProjectsSection = () => {
       techStack: ["DevOps", "CI/CD", "Docker", "Container", "Sonar Qube", "Jenkins",],
       github: "https://github.com/MochamadAbdulRouf/Local-Enterprise-Grade-Secure-CI-CD-Pipeline",
     },
+    {
+      title: "GCP Infrastructure Automation with Terraform",
+      description: "This Terraform project contains GCP (Google Cloud Platform) infrastructure with the following resources: VM Instances, VPC, Cloud Storage Bucket, and Backend Bucket. It was created using Modules for perfect implementation and easy modification later on.",
+      techStack: ["DevOps", "IaC", "Terraform", "GCP",],
+      github: "https://github.com/MochamadAbdulRouf/Terraform-AWS-GCP-IAC/tree/master/GCP/Project-Infrastructure-GCP",
+    },
+    {
+      title: "Terraform AWS High Availability Web Application",
+      description: "This project demonstrates a production-ready approach to deploying web infrastructure on AWS using Terraform. It focuses on modularity, scalability, and security best practices.",
+      techStack: ["DevOps", "IaC", "Terraform", "AWS",],
+      github: "https://github.com/MochamadAbdulRouf/Terraform-AWS-GCP-IAC/tree/master/AWS/aws-terraform-ha-webapp",
+    },
   ];
 
   return (
