@@ -83,10 +83,10 @@ const About = () => {
                           <p>{exp.location}</p>
                         </div>
                       </div>
-                      <ul className="space-y-1.5 text-muted-foreground mt-3">
+                      <ul className="space-y-2 text-muted-foreground mt-3">
                         {exp.description.map((item, i) => (
-                          <li key={i} className="flex items-start gap-2">
-                            <span className="text-primary/70 mt-1">→</span>
+                          <li key={i} className="flex items-baseline gap-2">
+                            <span className="text-primary/70 shrink-0">→</span>
                             <span>{item}</span>
                           </li>
                         ))}
