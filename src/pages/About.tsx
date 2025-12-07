@@ -32,59 +32,69 @@ const About = () => {
               I'm Mochamad Abdul Rouf, a Fresh Graduate specializing in DevOps and Cloud Infrastructure. 
               I am passionate about building scalable, reliable, and automated systems.
             </p>
-            <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">Experience</h2>
+            <h2 className="text-2xl font-bold text-foreground mt-8 mb-6">Experience</h2>
             
-            {/* Experience Section - Tambahkan experience baru di array ini */}
-            <div className="space-y-6 mb-8">
-              {[
-                {
-                  company: "Nama Perusahaan",
-                  role: "DevOps Engineer",
-                  period: "Jan 2024 - Present",
-                  location: "Jakarta, Indonesia",
-                  description: [
-                    "Mengelola infrastruktur cloud menggunakan AWS dan GCP",
-                    "Implementasi CI/CD pipeline dengan Jenkins dan GitHub Actions",
-                    "Containerization aplikasi menggunakan Docker dan Kubernetes",
-                    "Monitoring dan observability dengan Prometheus dan Grafana",
-                  ],
-                },
-                // Tambahkan experience baru di sini dengan format yang sama
-                // {
-                //   company: "Perusahaan Lain",
-                //   role: "Junior DevOps",
-                //   period: "Jun 2023 - Dec 2023",
-                //   location: "Bandung, Indonesia",
-                //   description: [
-                //     "Deskripsi tugas 1",
-                //     "Deskripsi tugas 2",
-                //   ],
-                // },
-              ].map((exp, index) => (
-                <div
-                  key={index}
-                  className="p-6 rounded-lg border border-border bg-card hover:bg-accent/50 transition-colors"
-                >
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
-                    <div>
-                      <h3 className="text-xl font-semibold text-foreground">{exp.company}</h3>
-                      <p className="text-primary font-medium">{exp.role}</p>
+            {/* Experience Timeline - Tambahkan experience baru di array ini */}
+            <div className="relative mb-8">
+              {/* Timeline line */}
+              <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary/50 to-transparent" />
+              
+              <div className="space-y-8">
+                {[
+                  {
+                    company: "Nama Perusahaan",
+                    role: "DevOps Engineer",
+                    period: "Jan 2024 - Present",
+                    location: "Jakarta, Indonesia",
+                    description: [
+                      "Mengelola infrastruktur cloud menggunakan AWS dan GCP",
+                      "Implementasi CI/CD pipeline dengan Jenkins dan GitHub Actions",
+                      "Containerization aplikasi menggunakan Docker dan Kubernetes",
+                      "Monitoring dan observability dengan Prometheus dan Grafana",
+                    ],
+                  },
+                  // Tambahkan experience baru di sini dengan format yang sama
+                  // {
+                  //   company: "Perusahaan Lain",
+                  //   role: "Junior DevOps",
+                  //   period: "Jun 2023 - Dec 2023",
+                  //   location: "Bandung, Indonesia",
+                  //   description: [
+                  //     "Deskripsi tugas 1",
+                  //     "Deskripsi tugas 2",
+                  //   ],
+                  // },
+                ].map((exp, index) => (
+                  <div key={index} className="relative pl-12">
+                    {/* Timeline dot */}
+                    <div className="absolute left-0 top-1 w-8 h-8 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
+                      <div className="w-3 h-3 rounded-full bg-primary" />
                     </div>
-                    <div className="text-sm text-muted-foreground mt-2 md:mt-0 md:text-right">
-                      <p>{exp.period}</p>
-                      <p>{exp.location}</p>
+                    
+                    {/* Content */}
+                    <div className="pb-2">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-2">
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground">{exp.company}</h3>
+                          <p className="text-primary font-medium">{exp.role}</p>
+                        </div>
+                        <div className="text-sm text-muted-foreground sm:text-right">
+                          <p className="font-medium">{exp.period}</p>
+                          <p>{exp.location}</p>
+                        </div>
+                      </div>
+                      <ul className="space-y-1.5 text-muted-foreground mt-3">
+                        {exp.description.map((item, i) => (
+                          <li key={i} className="flex items-start gap-2">
+                            <span className="text-primary/70 mt-1">→</span>
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-                  <ul className="space-y-2 text-muted-foreground">
-                    {exp.description.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-primary mt-1.5">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
 
             <h2 className="text-2xl font-bold text-foreground mt-8 mb-4">My Journey</h2>
