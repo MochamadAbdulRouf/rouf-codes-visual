@@ -214,6 +214,36 @@ const PostsSection = () => {
         { platform: 'medium', url: 'https://medium.com/@rouf08412/deploy-kubernetes-load-balancer-service-with-terraform-47ee1966b2ce' }
       ]
     },
+    {
+      title: "Configuring Network Connectivity Center as a Transit Hub",
+      excerpt: "A hub is a global Google Cloud resource that supports multiple attached spokes. It provides a simple way to connect spokes together to enable data transfer across them.",
+      date: "2025-12-05",
+      readTime: "2 Jam",
+      tags: ["GCP", "VPC", "Networking", "DevOps", "Cloud"],
+      links: [
+        { platform: 'medium', url: 'https://medium.com/@rouf08412/configuring-network-connectivity-center-as-a-transit-hub-b66246e8c291' }
+      ]
+    },
+    {
+      title: "VPC Networking: Cloud HA-VPN (Google Cloud Platform)",
+      excerpt: "For this lab, I will set up two VPCs and add a cloud HA-VPN gateway in each. I will run two tunnels from each VPN gateway to demonstrate the HA-VPN gateway configuration for 99.99% SLA.",
+      date: "2025-12-05",
+      readTime: "2 Jam",
+      tags: ["GCP", "VPC", "Networking", "DevOps", "Cloud"],
+      links: [
+        { platform: 'medium', url: 'https://medium.com/@rouf08412/vpc-networking-cloud-ha-vpn-google-cloud-platform-65ab643b6b85' }
+      ]
+    },
+    {
+      title: "How to Use a Network Policy on Google Kubernetes Engine (GKE)",
+      excerpt: "This lab will show you how to improve the security of your Kubernetes Engine by applying fine-grained restrictions to network communication.",
+      date: "2025-12-07",
+      readTime: "2 Jam",
+      tags: ["GCP", "Kubernetes", "Networking", "DevOps", "Cloud"],
+      links: [
+        { platform: 'medium', url: 'https://medium.com/@rouf08412/how-to-use-a-network-policy-on-google-kubernetes-engine-e66912a7e5e5' }
+      ]
+    },
   ];
 
 
